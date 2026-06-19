@@ -4,15 +4,15 @@ import ReactCountryFlag from 'react-country-flag';
 import { Link } from 'react-router-dom';
 import { useCities } from '../contexts/CitiesContext';
 
-CityItem.propTypes = {
-  city: PropTypes.shape({
-    cityName: PropTypes.string,
-    emoji: PropTypes.string,
-    date: PropTypes.string,
-    id: PropTypes.number,
-    position: PropTypes.shape({ lat: PropTypes.number, lng: PropTypes.number }),
-  }).isRequired,
-};
+// CityItem.propTypes = {
+//   city: PropTypes.shape({
+//     cityName: PropTypes.string,
+//     emoji: PropTypes.string,
+//     date: PropTypes.string,
+//     id: PropTypes.number,
+//     position: PropTypes.shape({ lat: PropTypes.number, lng: PropTypes.number }),
+//   }).isRequired,
+// };
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat('en', {
@@ -24,8 +24,15 @@ const formatDate = (date) =>
 
 function CityItem({ city }) {
   //   console.log('city', city);
-  const { currentCity } = useCities();
+  const { currentCity, deleteCity } = useCities();
   const { cityName, emoji, date, id, position } = city;
+
+  async function handleDelete(e) {
+    e.preventDefault();
+    await deleteCity(id);
+    // console.log('e', e);
+  }
+
   return (
     <li>
       <Link
@@ -37,7 +44,9 @@ function CityItem({ city }) {
         </span>
         <h3 className={styles.name}>{cityName}</h3>
         <time className={styles.date}>{formatDate(date)}</time>
-        <button className={styles.deleteBtn}>&times;</button>
+        <button className={styles.deleteBtn} onClick={(e) => handleDelete(e)}>
+          &times;
+        </button>
       </Link>
     </li>
   );

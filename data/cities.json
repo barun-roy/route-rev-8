@@ -35,42 +35,6 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
-    },
-    {
-      "cityName": "Amsterdam",
-      "country": "Netherlands (Kingdom of the)",
-      "emoji": "NL",
-      "date": "2026-06-19T01:24:38.237Z",
-      "notes": "Wow",
-      "position": {
-        "lat": "52.33526529536161",
-        "lng": "4.864937983211712"
-      },
-      "id": 98443198
-    },
-    {
-      "cityName": "Tokyo",
-      "country": "Japan",
-      "emoji": "JP",
-      "date": "2026-06-19T01:28:42.209Z",
-      "notes": "Wow",
-      "position": {
-        "lat": "35.63052958082163",
-        "lng": "139.75549993312012"
-      },
-      "id": 98443199
-    },
-    {
-      "cityName": "Sapporo",
-      "country": "Japan",
-      "emoji": "JP",
-      "date": "2026-06-19T01:31:47.920Z",
-      "notes": "Wow",
-      "position": {
-        "lat": "43.141079140053336",
-        "lng": "141.38113380933362"
-      },
-      "id": 98443200
     }
   ]
 }
