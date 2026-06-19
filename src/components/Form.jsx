@@ -24,7 +24,6 @@ export function convertToEmoji(countryCode) {
   return String.fromCodePoint(...codePoints);
 }
 
-
 function Form() {
   const [lat, lng] = useURLPosition();
   const { createCity, isLoading } = useCities();
@@ -67,6 +66,7 @@ function Form() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+
     if (!cityName || !date) return;
     const newCity = {
       cityName,
