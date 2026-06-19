@@ -37,28 +37,40 @@
       "id": 98443197
     },
     {
-      "cityName": "Faro",
-      "country": "Portugal",
-      "emoji": "PT",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "cityName": "Amsterdam",
+      "country": "Netherlands (Kingdom of the)",
+      "emoji": "NL",
+      "date": "2026-06-19T01:24:38.237Z",
+      "notes": "Wow",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
+        "lat": "52.33526529536161",
+        "lng": "4.864937983211712"
       },
-      "id": 73931385
+      "id": 98443198
     },
     {
-      "cityName": "Barcelona",
-      "country": "Spain",
-      "emoji": "ES",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
+      "cityName": "Tokyo",
+      "country": "Japan",
+      "emoji": "JP",
+      "date": "2026-06-19T01:28:42.209Z",
+      "notes": "Wow",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "35.63052958082163",
+        "lng": "139.75549993312012"
       },
-      "id": 17806741
+      "id": 98443199
+    },
+    {
+      "cityName": "Sapporo",
+      "country": "Japan",
+      "emoji": "JP",
+      "date": "2026-06-19T01:31:47.920Z",
+      "notes": "Wow",
+      "position": {
+        "lat": "43.141079140053336",
+        "lng": "141.38113380933362"
+      },
+      "id": 98443200
     }
   ]
 }

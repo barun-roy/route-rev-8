@@ -8,7 +8,7 @@ Message.propTypes = {
 function Message({ message }) {
   return (
     <p className={styles.message}>
-      <span role="img">👋</span> {message}
+      <span role="img">👋</span> <span>{message}</span>
     </p>
   );
 }
